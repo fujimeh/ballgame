@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #endScreen{
+            position: absolute;
+            z-index: 101;
+            width: 600px;
+            height: 40w0px;
+            background-color: green;
+            display: none;
+        }
+        #endScreenContent{
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+            background-color: white;
+            margin: 80 auto;
+            text-align: center;
+        }
+        
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .letroll_text {
+      color: white;
+      font-size: 5px
+    }
+    .end_text{
+        color: white;
+        flex-wrap: wrap;
+        display: flex;
+        flex: 50%;
+        font-size: 16px
+    }
+    /* .flex-item-right{
+        display: flex;
+        flex: 50%;
+    } */
+    #container{
+    position: relative;
+}
+#container canvas {
+    position: absolute;
+}
+#overlay{
+    position: absolute;
+    top: 7px;
+    right: 2px;
+}
+button{
+    position: fixed;
+    background-color: lightblue;
+    color: black;
+    font-size: 25px;
+    margin: auto;
+    width:200px;
+    height: 100px;
+    right: 640px;
+    bottom: 230px; 
+    border: 7px solid orange;
+}
+
+#wipebutton{
+    position: absolute;
+}
+
+  </style>
+
+<div id = "container">
+    <canvas></canvas>
+    <div id = "overlay" class ="letroll_text" >Score: 69</div>
+</div>
+
+<body>
+    <div id = "endScreen">
+        <div id = "endScreenContet">
+            <div id = "btnReplay" class = "button" onclick = "replay()"> Play Again</div>
+        </div>
+    </div>
+
+
+<div id = "wipebutton"> 
+    <div class = "end_text"> 
+            <div>
+                <button id ="restartBtn">
+                    Start Game
+                </button>
+            </div> 
+    </div>
+
+
+</div> 
+
+
+    
+<canvas id = "levelup"> </canvas>
+<!-- <canvas id ="level2"></canvas> -->
+<script src="index.js"></script>
+</body>
+
+</html>
